@@ -8,8 +8,34 @@
 <script defer src="script.js"></script>
 </head>
 <body>
-    <p> Texto azul </p>Aqui tenho texto
-    texto
+    <header class="headfoot">
+        <img src="/assets/logoufop.png" alt="LogoUfop">
+
+    </header>
+    <div id="MainBody">
+        <div>
+            <h1> Bem vindo ao ChatUFOP!</h1>
+            <h2> Digite a sua pergunta e o nosso guru tentará sanar suas dúvidas</h2>
+        </div>
+
+        
+        <div id="OperationArea">
+           <div id="PopUpMenu"> Ola</div>
+
+
+           <div id="ChatBox">
+                <div id="API">Respostas API</div>
+                <form id="ChatForm">
+                    <textarea id="userInput" placeholder="Type your message here..."></textarea>
+                    <button type="button" id="sendButton" onclick="sendMessage()">Send</button>
+
+                </form>
+           </div> 
+           
+        </div>
+    </div>
+
+    <footer class="headfoot"> UFOP Footer</footer>
     
 </body>
 </html>
