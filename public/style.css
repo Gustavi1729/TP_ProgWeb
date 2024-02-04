@@ -30,11 +30,6 @@ body{
     flex-grow: 1;
 
 }
-#PopUpMenu{
-    height: 98%;
-    width: 20%;
-    background-color: #FFAAFF;
-}
 
 #ChatBox{
     display: flex;
