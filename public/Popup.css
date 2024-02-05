@@ -1,14 +1,37 @@
+@keyframes Open {
+  from {
+    color: #ffffff00;
+    opacity: 0;
+    width: 0px;
+  }
+  to {
+    opacity: 1;
+    width: 200px;
+    color: #ffffff;
+  }
+}
+
+@keyframes OpenText{
+  from {
+    color: #ffffff00 ;
+    
+  }
+  to {
+    
+    color: #962038FF;
+  }
+
+}
+
+
+
+
 .wrapper {
     display: flex;
     height: 100%;
   }
   
-  .main {
-    flex-grow: 1;
-    padding: 20px;
-    overflow-y: auto;
-  }
-  
+
   .side-panel-toggle {
     width: 40px;
     height: 40px;
@@ -31,29 +54,27 @@
   .sp-icon-close {
     display: none !important;
   }
-  
-  @media(max-width:1079px){ .side-panel {
-    display: none;
-    width: 30vw;
-    flex-shrink: 1;
-    padding: 20px;
-    color: #ffffff;
-    background: #404040;
-    margin-right: -33px;
-    overflow-y: auto;
-  }
-}
-
-@media(min-width:1080px){ .side-panel {
+  .side-panel {
     display: none;
     width: 10vw;
     flex-shrink: 1;
+
     overflow-y: auto;
     padding: 20px;
     color: #ffffff;
     background: #404040;
+    animation: Open 0.3s ease-out forwards
+    
+  }
+  
+  @media(max-width:1079px){ .side-panel {
+
+    max-width: 24vw;
+    margin-right: -10px;
+   
   }
 }
+
   
 
   .side-panel-open .side-panel {
@@ -77,15 +98,39 @@
     flex-grow: 1;
     flex-direction: column;
     justify-content: space-around;
-    margin-bottom:40px
+    margin-bottom:40px;
   }
+
+  @media(max-width:500px){
+    .perguntas
+    {
+      padding-top: 50px;
+    }
+  }
+
+  .pergunta
+    {
+      font-family: "Poppins", sans-serif;
+      font-size: large;
+      border-radius: 10px;
+      max-width: 100%;
+      color: #ffffff;
+      box-shadow: 5px 5px 10px #000000AA;
+      animation: 0.5s ease-out 0.5s OpenText;
+      animation-fill-mode: forwards;
+      background-color: #ffffff;
+      transition: background-color 0.7s ease;
+
+    }
+
+
   @media(max-width:500px){
     .pergunta
     {
       font-size: small;
       font-family: "Poppins", sans-serif;
       border-radius: 10px;
-      max-width: 110%;
+      max-width: 100%;
     }
   }
   
@@ -97,8 +142,7 @@
     font-family: "Poppins", sans-serif;
     border-radius: 10px;
     max-width: 100%;
-    color: #962038;
-    box-shadow: 5px 5px 10px #000000AA
+
   }
 }
 @media(min-width:1080px){
@@ -108,7 +152,12 @@
       font-size: large;
       border-radius: 10px;
       max-width: 100%;
-      color: #962038;
-      box-shadow: 5px 5px 10px #000000AA
+
     }
   }
+
+.pergunta:hover
+{ 
+  cursor: pointer;
+  background-color: #bdbdbd;
+}

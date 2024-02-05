@@ -9,6 +9,14 @@
     justify-content: center;
     margin-left: 10px;
     color: #E3F2FD;
+    box-shadow: 5px 5px 10px #000000AA
+}
+
+#send-btn:hover
+{
+  background-color: #681627;
+  cursor: pointer;
+  
 }
 
 textarea
@@ -99,6 +107,7 @@ li
     display: flex;
     flex-direction: row;
     flex-grow: 1;
+    height: 85vh;
 
 }
 
