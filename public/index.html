@@ -6,48 +6,69 @@
     <title>Document</title>
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="Popup.css">
+<link rel="stylesheet" href="chatbox.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <script defer src="script.js"></script>
 </head>
 <body>
     <header class="headfoot">
-        <img src="/assets/logoufop.png" alt="LogoUfop">
+        <a href="http://minha.ufop.br/minhaufop/" ><img src="/assets/logoufop.png" alt="LogoUfop"> </a>
 
     </header>
+
+    <div id="OperationArea">
+        <div id="PopUpMenu">
+         <div class="wrapper side-panel-open">
+             
+             <div class="side-panel">
+                <h2>Perguntas Frequentes</h2>
+                <div class="perguntas">
+                    <button class="pergunta"> Como obter assitência estudantil?</button>
+                    <button class="pergunta"> Onde enviar minhas horas ATV?</button>
+                    <button class="pergunta"> Onde posso ver meu histórico escolar?</button>
+                    <button class="pergunta"> Como fazer trancamento de curso/disciplina?</button>
+                    <button class="pergunta"> Como posso entrar em contato com o centro acadêmico?</button>
+                    <button class="pergunta"> Quais são as cargas horárias do meu curso?</button>
+            </div>
+             </div>
+             <button class="side-panel-toggle" type="button">
+                 <span class="material-icons sp-icon-close">keyboard_double_arrow_left</span>
+                 <span class="material-icons sp-icon-open">keyboard_double_arrow_right</span>
+               </button>
+           </div>
+
+        </div>
     <div id="MainBody">
         <div>
             <h1> Bem vindo ao ChatUFOP!</h1>
             <h2> Digite a sua pergunta e o nosso guru tentará sanar suas dúvidas</h2>
         </div>
 
+        <div id="Chat">
+            
+            
+                <div id="API">
+                        <ul class="chatbox">
+                          <li class="chat incoming">
+                            <span class="material-symbols-outlined"> smart_toy </span>
+                            <p> Olá! Qual a sua dúvida em relação a UFOP?</p>
+                          </li>
+                        </ul>
         
-        <div id="OperationArea">
-           <div id="PopUpMenu">
-            <div class="wrapper side-panel-open">
-                
-                <div class="side-panel">
-              
+
                 </div>
-                <button class="side-panel-toggle" type="button">
-                    <span class="material-icons sp-icon-close">keyboard_double_arrow_left</span>
-                    <span class="material-icons sp-icon-open">keyboard_double_arrow_right</span>
-                  </button>
-              </div>
-
-           </div>
-
-
-           <div id="ChatBox">
-                <div id="API">Respostas API</div>
-                <form id="ChatForm">
-                    <textarea id="userInput" placeholder="Type your message here..."></textarea>
-                    <button type="button" id="sendButton" onclick="sendMessage()">Send</button>
-
-                </form>
-           </div> 
+                <div class="chat-input">
+                    <textarea placeholder="Faça uma Pergunta" spellcheck="false" required></textarea>
+                    <span id="send-btn" class="material-symbols-rounded">Enviar</span>
+                </div>
+                
+        </div> 
            
         </div>
     </div>
+
+
 
     <footer class="headfoot"> UFOP Footer</footer>
     

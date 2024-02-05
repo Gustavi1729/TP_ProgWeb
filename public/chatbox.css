@@ -1,0 +1,136 @@
+
+
+#send-btn{
+    background-color: #962038;
+    border-radius: 10px;
+    height: 70%;
+    width: 12vw;
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+    color: #E3F2FD;
+}
+
+textarea
+{
+    overflow: hidden;
+    border-radius: 5px;
+    padding: 5px;
+    font-family: "Poppins", sans-serif;
+    height: 25px;
+    resize: none;
+    width: 40vw;
+}
+
+.chat-input{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    margin-top: 1%;
+    height:10%;
+}
+
+.chatbox
+{
+
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.chatbox .outgoing
+{
+    align-self: flex-end;
+    margin-right: 20px;
+    overflow: auto;
+    max-width: 30vw;
+    border-radius: 20px;
+    background-color: #404040;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    animation: fadeIn 1s ease-out forwards;
+    
+}
+
+.chatbox .incoming
+{
+    overflow: auto;
+    max-width: 30vw;
+    border-radius: 20px;
+    background-color: #404040;
+    padding: 5px;
+    animation: fadeOut 1s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateX(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes fadeOut {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+
+li
+{
+    color: #E3F2FD;
+    box-shadow: 5px 5px 10px #000000AA
+
+}
+
+
+#OperationArea{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+
+}
+
+#Chat{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 95%;
+    border-radius: 40px;
+    background-color: #404040;
+    max-height: 70%;
+
+}
+#MainBody{
+    flex-grow: 1;
+    justify-content: left;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    max-height: 85vh;
+
+
+}
+
+
+#API{
+    margin-top: 30px;
+    background-color: #962038;
+    align-self: center;
+    border-radius: 40px;
+    height: 100%;
+    width:97%;
+    overflow: auto;
+
+}
